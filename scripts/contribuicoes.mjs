@@ -5,6 +5,7 @@
 // Uso: GITHUB_TOKEN=... USERNAME=... node scripts/contribuicoes.mjs
 //      MOCK=1 node scripts/contribuicoes.mjs   (dados de exemplo, para testar)
 import { writeFileSync, mkdirSync } from 'node:fs';
+import { cidade } from './cidade.mjs';
 
 const TEXTOS = {
   pt: { meses: ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'], dias: ['seg', 'qua', 'sex'],
@@ -103,4 +104,6 @@ writeFileSync('assets/contribuicoes.svg', svg(dados, TEMAS.escuro, TEXTOS.pt));
 writeFileSync('assets/contribuicoes-claro.svg', svg(dados, TEMAS.claro, TEXTOS.pt));
 writeFileSync('assets/contributions.svg', svg(dados, TEMAS.escuro, TEXTOS.en));
 writeFileSync('assets/contributions-light.svg', svg(dados, TEMAS.claro, TEXTOS.en));
+writeFileSync('assets/cidade.svg', cidade(dados, 'pt'));
+writeFileSync('assets/city.svg', cidade(dados, 'en'));
 console.log(`${dados.total} contribuições, ${dados.semanas.length} semanas`);

@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="assets/header.gif" alt="Terminal apresentando Gabriel Pinto Machado, desenvolvedor full-stack em Porto Alegre" width="760" />
-
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=F2415A&center=true&vCenter=true&width=620&lines=Sistemas+que+rodam+ao+vivo.;Do+banco+de+dados+ao+%C3%BAltimo+pixel.;Web%2C+mobile+e+tempo+real." alt="Sistemas que rodam ao vivo. Do banco de dados ao último pixel. Web, mobile e tempo real." />
-</a>
+<img src="assets/terminal.gif" alt="Terminal apresentando Gabriel Pinto Machado, desenvolvedor full-stack em Porto Alegre: sistemas que rodam ao vivo, do banco de dados ao último pixel" width="760" />
 
 <p>
   <a href="https://portfolio-financy1.vercel.app"><img src="https://img.shields.io/badge/Portf%C3%B3lio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio" /></a>
@@ -69,11 +65,7 @@ Construo apps web e mobile e sistemas em tempo real, do modelo de dados à últi
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contribuicoes.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/contribuicoes-claro.svg" />
-  <img src="assets/contribuicoes.svg" alt="Grade de contribuições no GitHub no último ano" />
-</picture>
+<img src="assets/cidade.svg" alt="Cidade das contribuições: cada prédio é uma semana do último ano" />
 
 </div>
 
@@ -122,11 +114,7 @@ I build web and mobile apps and real-time systems, from the data model to the la
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/contributions-light.svg" />
-  <img src="assets/contributions.svg" alt="GitHub contribution grid for the last year" />
-</picture>
+<img src="assets/city.svg" alt="Contribution city: every building is a week of the last year" />
 
 </div>
 
