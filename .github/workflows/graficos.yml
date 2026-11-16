@@ -1,6 +1,6 @@
 name: Gráficos do perfil
 
-# Gera a cidade 3D das contribuições uma vez por dia
+# Gera os prédios 3D das contribuições uma vez por dia
 # (e também quando este arquivo ou o script mudam, ou quando rodado à mão em Actions).
 on:
   schedule:
@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Cidade 3D das contribuições
+      - name: Prédios 3D das contribuições
         run: node scripts/contribuicoes.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add assets/cidade-3d.svg assets/city-3d.svg
+          git add assets/predios.svg assets/buildings.svg
           if git commit -m "Atualiza os gráficos do perfil"; then
             git push
           fi

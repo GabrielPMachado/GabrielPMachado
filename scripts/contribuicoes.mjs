@@ -1,8 +1,8 @@
-// Busca as contribuições do último ano e desenha a cidade 3D (assets/cidade-3d.svg e assets/city-3d.svg).
+// Busca as contribuições do último ano e desenha os prédios 3D girando (assets/predios.svg e assets/buildings.svg).
 // Uso: GITHUB_TOKEN=... USERNAME=... node scripts/contribuicoes.mjs
 //      MOCK=1 node scripts/contribuicoes.mjs   (dados de exemplo, para testar)
 import { writeFileSync, mkdirSync } from 'node:fs';
-import { cidade3d } from './cidade3d.mjs';
+import { predios } from './predios.mjs';
 
 async function buscar() {
   if (process.env.MOCK) {
@@ -37,6 +37,6 @@ async function buscar() {
 
 const dados = await buscar();
 mkdirSync('assets', { recursive: true });
-writeFileSync('assets/cidade-3d.svg', cidade3d(dados, 'pt'));
-writeFileSync('assets/city-3d.svg', cidade3d(dados, 'en'));
+writeFileSync('assets/predios.svg', predios(dados, 'pt'));
+writeFileSync('assets/buildings.svg', predios(dados, 'en'));
 console.log(`${dados.total} contribuições, ${dados.semanas.length} semanas`);
