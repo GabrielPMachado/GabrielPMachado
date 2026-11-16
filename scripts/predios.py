@@ -14,8 +14,10 @@ W, H, SS = 860, 420, 2            # tamanho final e supersampling
 QUADROS, MS = 200, 36             # 200 quadros x 36 ms = volta de 7,2 s (~28 fps)
 CX, CY, S, TILT = W / 2, 262, 12.5, 0.42
 BASE = [None, (92, 52, 168), (118, 72, 214), (150, 102, 245), (190, 150, 255)]
+MESES = {'pt': ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'],
+         'en': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']}
 TXT = {
-    'pt': ('contribuições no último ano', 'cada prédio é um dia · quanto mais alto, mais contribuições', 'assets/predios.webp'),
+    'pt': ('contribuições no último ano', 'cada prédio é um dia · quanto mais alto, mais contribuições naquele dia', 'assets/predios.webp'),
     'en': ('contributions in the last year', 'every building is a day · taller means more contributions', 'assets/buildings.webp'),
 }
 NIVEL = {'NONE': 0, 'FIRST_QUARTILE': 1, 'SECOND_QUARTILE': 2, 'THIRD_QUARTILE': 3, 'FOURTH_QUARTILE': 4}
@@ -25,14 +27,19 @@ def buscar():
     if os.environ.get('MOCK'):
         random.seed(4)
         semanas = []
+        hoje = dt.date.today()
+        ini = hoje - dt.timedelta(days=364 + (hoje.weekday() + 1) % 7)
         for w in range(53):
             dias = []
             for d in range(7):
+                data = ini + dt.timedelta(days=w * 7 + d)
+                if data > hoje:
+                    break
                 n = (random.random() < .8) * random.randint(0, 12) if w > 42 else int(random.random() < .04)
-                dias.append({'contributionCount': n, 'contributionLevel': 0 if n == 0 else 1 if n < 3 else 2 if n < 6 else 3 if n < 9 else 4, 'weekday': d})
+                dias.append({'contributionCount': n, 'contributionLevel': 0 if n == 0 else 1 if n < 3 else 2 if n < 6 else 3 if n < 9 else 4, 'weekday': d, 'date': data.isoformat()})
             semanas.append(dias)
         return sum(d['contributionCount'] for s in semanas for d in s), semanas
-    q = 'query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{weekday contributionCount contributionLevel}}}}}}'
+    q = 'query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{date weekday contributionCount contributionLevel}}}}}}'
     req = urllib.request.Request('https://api.github.com/graphql', data=json.dumps({'query': q, 'variables': {'u': os.environ['USERNAME']}}).encode(),
                                  headers={'Authorization': f"bearer {os.environ['GITHUB_TOKEN']}", 'Content-Type': 'application/json'})
     cal = json.load(urllib.request.urlopen(req))['data']['user']['contributionsCollection']['contributionCalendar']
@@ -67,7 +74,7 @@ def fundo():
     return img
 
 
-def quadro(base, barras, ang):
+def quadro(base, barras, meses, ang, fmes):
     img = base.copy()
     d = ImageDraw.Draw(img, 'RGBA')
     c, s, st, ct = math.cos(ang), math.sin(ang), math.sin(TILT), math.cos(TILT)
@@ -78,6 +85,12 @@ def quadro(base, barras, ang):
 
     piso = [proj(x, z, 0)[:2] for x, z in ((-27.2, -4.2), (27.2, -4.2), (27.2, 4.2), (-27.2, 4.2))]
     d.polygon(piso, fill=(42, 26, 79, 140), outline=(109, 67, 201, 115), width=SS)
+    # linhas entre os meses (em degrau, seguindo os dias) e o nome de cada mês na borda
+    for m in meses:
+        if m['linha']:
+            d.line([proj(x, z, 0)[:2] for x, z in m['linha']], fill=(196, 160, 255, 150), width=SS, joint='curve')
+        lx, ly, _ = proj(m['cx'], 5.4, 0)
+        d.text((lx, ly), m['nome'], font=fmes, fill=(186, 164, 230), anchor='mm')
     lado = .4
     for b in sorted(barras, key=lambda b: proj(b['x'], b['z'], 0)[2]):
         cantos = [(b['x'] + dx, b['z'] + dz) for dx, dz in ((-lado, -lado), (lado, -lado), (lado, lado), (-lado, lado))]
@@ -102,10 +115,27 @@ def main():
     barras = [{'x': w - (len(semanas) - 1) / 2, 'z': d['weekday'] - 3,
                'h': .35 + math.sqrt(d['contributionCount'] / mx) * 7.5,
                'rgb': BASE[max(1, d['contributionLevel'])]} for w, d in dias if d['contributionCount'] > 0]
+    # meses: onde cada um começa em cada dia da semana, para desenhar a divisa em degrau
+    off = (len(semanas) - 1) / 2
+    grade = {(w, d['weekday']): d['date'][:7] for w, d in dias}
+    ordem = sorted(set(grade.values()))
+    meses_geo = []
+    for i, ym in enumerate(ordem):
+        cols = [w for (w, _), v in grade.items() if v == ym]
+        linha = []
+        if i > 0:
+            for wd in range(7):
+                ws = [w for (w, dd), v in grade.items() if dd == wd and v >= ym]
+                xb = (min(ws) if ws else len(semanas)) - off - .5
+                linha += [(xb, wd - 3 - .5), (xb, wd - 3 + .5)]
+        meses_geo.append({'mes': int(ym[5:]) - 1, 'cx': (min(cols) + max(cols)) / 2 - off, 'linha': linha, 'larg': max(cols) - min(cols) + 1})
     base = fundo()
-    quadros = [quadro(base, barras, k / QUADROS * 2 * math.pi + .35) for k in range(QUADROS)]
     os.makedirs('assets', exist_ok=True)
     for lang, (titulo, sub, arq) in TXT.items():
+        # mês com menos de 2 semanas visíveis fica sem nome, para não sobrepor
+        meses = [{**m, 'nome': MESES[lang][m['mes']] if m['larg'] >= 2 else ''} for m in meses_geo]
+        fmes = fonte(10 * SS)
+        quadros = [quadro(base, barras, meses, k / QUADROS * 2 * math.pi + .35, fmes) for k in range(QUADROS)]
         saida = []
         num = f"{total:,}".replace(',', '.' if lang == 'pt' else ',')
         for q in quadros:

@@ -16,19 +16,19 @@
 ## <img src="assets/icones/user.svg" width="28" height="28" align="top" alt="" /> Sobre mim
 
 Sou o **Gabriel Pinto Machado**, desenvolvedor full-stack em **Porto Alegre, RS**, e estudo **Ciência da Computação na Estácio**.
-Construo apps web e mobile e sistemas em tempo real, do modelo de dados à última animação. Gosto de problemas em que várias telas precisam concordar no mesmo instante.
+Desenvolvo aplicativos web e mobile, além de sistemas em tempo real, do modelo de dados à última animação. Gosto de desafios em que várias telas precisam estar sincronizadas no mesmo instante.
 
-- <img src="assets/icones/radar.svg" width="18" height="18" align="top" alt="" /> Hoje: o **Financy** (finanças pessoais com Open Finance) e o **Órbita** (organização pessoal para iPhone)
-- <img src="assets/icones/briefcase.svg" width="18" height="18" align="top" alt="" /> Aberto a vagas CLT ou PJ, presencial em Porto Alegre ou remoto, e a projetos
-- <img src="assets/icones/mail.svg" width="18" height="18" align="top" alt="" /> O caminho mais rápido: [gabriel.pmachado00@gmail.com](mailto:gabriel.pmachado00@gmail.com)
+- <img src="assets/icones/radar.svg" width="18" height="18" align="top" alt="" /> Trabalhando atualmente no **Financy** (finanças pessoais com Open Finance) e no **Órbita** (organização pessoal para iPhone)
+- <img src="assets/icones/briefcase.svg" width="18" height="18" align="top" alt="" /> Aberto a vagas CLT ou PJ (presenciais em Porto Alegre ou remotas) e a projetos freelance
+- <img src="assets/icones/mail.svg" width="18" height="18" align="top" alt="" /> Fale comigo pelo e-mail: [gabriel.pmachado00@gmail.com](mailto:gabriel.pmachado00@gmail.com)
 
 <details>
 <summary><b>Como eu trabalho</b> (clique para abrir)</summary>
 <br>
 
 - **Estrutura antes de tudo:** camadas bem separadas, regras de acesso testadas e um projeto que outra pessoa consegue abrir e entender.
-- **Fluxos que guiam:** etapas, confirmações e atalhos no lugar de formulários enormes. A interface conduz, o usuário não decora.
-- **Nada de bagunça:** estado em um só lugar, dados sincronizados entre telas e nada sobrando quando ninguém usa.
+- **Fluxos que guiam:** etapas, confirmações e atalhos no lugar de formulários enormes. A interface conduz; o usuário não precisa decorar nada.
+- **Nada de bagunça:** estado em um só lugar, dados sincronizados entre as telas e nada rodando à toa quando ninguém está usando.
 
 </details>
 
@@ -51,21 +51,21 @@ Construo apps web e mobile e sistemas em tempo real, do modelo de dados à últi
 
 ## <img src="assets/icones/rocket.svg" width="28" height="28" align="top" alt="" /> Projetos em destaque
 
-| Projeto | O que é | Stack | Link |
+| Projeto | O que é | Tecnologias | Link |
 |---|---|---|---|
-| <img src="assets/icones/wallet.svg" width="20" height="20" align="top" alt="" /> **Financy** | Finanças pessoais na web, no iPhone e no Android, com Nubank e Mercado Pago entrando sozinhos via Open Finance | React 19 · Firebase · Kotlin | [Ver ao vivo](https://financy-vert.vercel.app) |
-| <img src="assets/icones/orbit.svg" width="20" height="20" align="top" alt="" /> **Órbita** | Organização pessoal com módulos que ligam e desligam, captura em linguagem natural e Liquid Glass do iOS 26 | React Native · Expo · Swift | [Código](https://github.com/GabrielPMachado/Orbita) |
-| <img src="assets/icones/flame.svg" width="20" height="20" align="top" alt="" /> **HypeApp** | O "Waze do Rolê": o hype de cada bar da Cidade Baixa em tempo real, com nota de 0 a 10 de quem está lá | React Native · Firebase · Google Maps | [Código](https://github.com/GabrielPMachado/HypeApp) |
-| <img src="assets/icones/beer.svg" width="20" height="20" align="top" alt="" /> **Bar do Dindo** | App de fidelidade, CRM da equipe e pré-cadastro de um bar, tudo num projeto Firebase sem servidor próprio | TypeScript · Firestore · Capacitor | [Código](https://github.com/GabrielPMachado/BarDoDindo) |
-| <img src="assets/icones/vertex.svg" width="20" height="20" align="top" alt="" /> **O Vértice** | SaaS para pequenas empresas: presença online, marketing e planejamento, com carrossel 3D de templates | React 19 · Vite · Vitest | [Ver ao vivo](https://overtice.vercel.app) |
+| <img src="assets/icones/wallet.svg" width="20" height="20" align="top" alt="" /> **Financy** | Finanças pessoais na web, no iPhone e no Android, com as transações do Nubank e do Mercado Pago entrando sozinhas via Open Finance | <img src="https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 19" /> <img src="https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white" alt="Firebase" /> <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" /> | [Ver ao vivo](https://financy-vert.vercel.app) |
+| <img src="assets/icones/orbit.svg" width="20" height="20" align="top" alt="" /> **Órbita** | Organização pessoal com módulos que podem ser ligados e desligados, captura em linguagem natural e o Liquid Glass do iOS 26 | <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" /> <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo" /> <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift" /> | [Código](https://github.com/GabrielPMachado/Orbita) |
+| <img src="assets/icones/flame.svg" width="20" height="20" align="top" alt="" /> **HypeApp** | O "Waze do Rolê": o hype de cada bar da Cidade Baixa em tempo real, com nota de 0 a 10 dada por quem está lá | <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" /> <img src="https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white" alt="Firebase" /> <img src="https://img.shields.io/badge/Google_Maps-4285F4?style=flat-square&logo=googlemaps&logoColor=white" alt="Google Maps" /> | [Código](https://github.com/GabrielPMachado/HypeApp) |
+| <img src="assets/icones/beer.svg" width="20" height="20" align="top" alt="" /> **Bar do Dindo** | App de fidelidade, CRM da equipe e página de pré-cadastro de um bar, tudo em um único projeto Firebase, sem servidor próprio | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firestore" /> <img src="https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white" alt="Capacitor" /> | [Código](https://github.com/GabrielPMachado/BarDoDindo) |
+| <img src="assets/icones/vertex.svg" width="20" height="20" align="top" alt="" /> **O Vértice** | SaaS para pequenas empresas: presença online, marketing e planejamento, além de um carrossel 3D de templates | <img src="https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 19" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Vitest" /> | [Ver ao vivo](https://overtice.vercel.app) |
 
-<p align="center"><sub>Todos com demo animada no <a href="https://portfolio-financy1.vercel.app">portfólio</a>.</sub></p>
+<p align="center"><sub>Todos têm uma demonstração animada no <a href="https://portfolio-financy1.vercel.app">portfólio</a>.</sub></p>
 
 ## <img src="assets/icones/grid.svg" width="28" height="28" align="top" alt="" /> Contribuições
 
 <div align="center">
 
-<img src="assets/predios.webp" alt="Prédios 3D girando: cada prédio é um dia do último ano, com altura pelas contribuições" />
+<img src="assets/predios.webp" alt="Prédios 3D girando: cada prédio é um dia do último ano, com altura proporcional às contribuições" />
 
 </div>
 
@@ -102,11 +102,11 @@ I build web and mobile apps and real-time systems, from the data model to the la
 
 | Project | What it is | Stack | Link |
 |---|---|---|---|
-| <img src="assets/icones/wallet.svg" width="20" height="20" align="top" alt="" /> **Financy** | Personal finance on web, iPhone and Android, with bank transactions flowing in through Open Finance | React 19 · Firebase · Kotlin | [Live](https://financy-vert.vercel.app) |
-| <img src="assets/icones/orbit.svg" width="20" height="20" align="top" alt="" /> **Órbita** | Modular personal organizer with natural-language capture and iOS 26 Liquid Glass | React Native · Expo · Swift | [Code](https://github.com/GabrielPMachado/Orbita) |
-| <img src="assets/icones/flame.svg" width="20" height="20" align="top" alt="" /> **HypeApp** | Real-time "hype" score for every bar in Cidade Baixa, rated by the people already there | React Native · Firebase · Google Maps | [Code](https://github.com/GabrielPMachado/HypeApp) |
-| <img src="assets/icones/beer.svg" width="20" height="20" align="top" alt="" /> **Bar do Dindo** | Loyalty app, staff CRM and sign-up page for a bar, all on one serverless Firebase project | TypeScript · Firestore · Capacitor | [Code](https://github.com/GabrielPMachado/BarDoDindo) |
-| <img src="assets/icones/vertex.svg" width="20" height="20" align="top" alt="" /> **O Vértice** | SaaS for small businesses: online presence, marketing and planning, with a 3D template carousel | React 19 · Vite · Vitest | [Live](https://overtice.vercel.app) |
+| <img src="assets/icones/wallet.svg" width="20" height="20" align="top" alt="" /> **Financy** | Personal finance on web, iPhone and Android, with bank transactions flowing in through Open Finance | <img src="https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 19" /> <img src="https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white" alt="Firebase" /> <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" /> | [Live](https://financy-vert.vercel.app) |
+| <img src="assets/icones/orbit.svg" width="20" height="20" align="top" alt="" /> **Órbita** | Modular personal organizer with natural-language capture and iOS 26 Liquid Glass | <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" /> <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo" /> <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift" /> | [Code](https://github.com/GabrielPMachado/Orbita) |
+| <img src="assets/icones/flame.svg" width="20" height="20" align="top" alt="" /> **HypeApp** | Real-time "hype" score for every bar in Cidade Baixa, rated by the people already there | <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" /> <img src="https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white" alt="Firebase" /> <img src="https://img.shields.io/badge/Google_Maps-4285F4?style=flat-square&logo=googlemaps&logoColor=white" alt="Google Maps" /> | [Code](https://github.com/GabrielPMachado/HypeApp) |
+| <img src="assets/icones/beer.svg" width="20" height="20" align="top" alt="" /> **Bar do Dindo** | Loyalty app, staff CRM and sign-up page for a bar, all on one serverless Firebase project | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firestore" /> <img src="https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white" alt="Capacitor" /> | [Code](https://github.com/GabrielPMachado/BarDoDindo) |
+| <img src="assets/icones/vertex.svg" width="20" height="20" align="top" alt="" /> **O Vértice** | SaaS for small businesses: online presence, marketing and planning, with a 3D template carousel | <img src="https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 19" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Vitest" /> | [Live](https://overtice.vercel.app) |
 
 <p align="center"><sub>Every project has an animated demo on my <a href="https://portfolio-financy1.vercel.app/en/">portfolio</a>.</sub></p>
 
