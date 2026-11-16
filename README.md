@@ -65,7 +65,7 @@ Construo apps web e mobile e sistemas em tempo real, do modelo de dados à últi
 
 <div align="center">
 
-<img src="assets/predios.svg" alt="Prédios 3D girando: cada prédio é um dia do último ano, com altura pelas contribuições" />
+<img src="assets/predios.webp" alt="Prédios 3D girando: cada prédio é um dia do último ano, com altura pelas contribuições" />
 
 </div>
 
@@ -114,7 +114,7 @@ I build web and mobile apps and real-time systems, from the data model to the la
 
 <div align="center">
 
-<img src="assets/buildings.svg" alt="Rotating 3D buildings: every building is a day of the last year, taller means more contributions" />
+<img src="assets/buildings.webp" alt="Rotating 3D buildings: every building is a day of the last year, taller means more contributions" />
 
 </div>
 

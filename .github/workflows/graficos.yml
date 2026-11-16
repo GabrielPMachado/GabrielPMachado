@@ -19,12 +19,14 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-python@v5
         with:
-          node-version: 22
+          python-version: "3.12"
 
       - name: Prédios 3D das contribuições
-        run: node scripts/contribuicoes.mjs
+        run: |
+          pip install --quiet pillow
+          python scripts/predios.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
@@ -33,7 +35,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add assets/predios.svg assets/buildings.svg
+          git add assets/predios.webp assets/buildings.webp
           if git commit -m "Atualiza os gráficos do perfil"; then
             git push
           fi
