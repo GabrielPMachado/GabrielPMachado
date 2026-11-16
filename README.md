@@ -65,30 +65,13 @@ Construo apps web e mobile e sistemas em tempo real, do modelo de dados à últi
 
 <sub>Todos com demo animada no <a href="https://portfolio-financy1.vercel.app">portfólio</a>.</sub>
 
-## 📊 Atividade
-
-<div align="center">
+## 🟩 Contribuições
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-green-animate.svg" />
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="Gráfico de contribuições em 3D" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/contribuicoes.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/contribuicoes-claro.svg" />
+  <img src="assets/contribuicoes.svg" alt="Grade de contribuições no GitHub no último ano" />
 </picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="dist/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="dist/snake.svg" />
-  <img src="dist/snake-dark.svg" alt="Cobrinha comendo o gráfico de contribuições" />
-</picture>
-
-<a href="https://github.com/GabrielPMachado?tab=repositories">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=GabrielPMachado&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=F2415A&icon_color=F2415A&text_color=c9d1d9&locale=pt-br" alt="Estatísticas do GitHub" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GabrielPMachado&layout=compact&hide_border=true&bg_color=0d1117&title_color=F2415A&text_color=c9d1d9&locale=pt-br" alt="Linguagens mais usadas" />
-</a>
-
-<img src="https://streak-stats.demolab.com?user=GabrielPMachado&hide_border=true&background=0d1117&ring=F2415A&fire=F2415A&currStreakLabel=F2415A&stroke=30363d&sideNums=c9d1d9&sideLabels=c9d1d9&dates=7d8590&currStreakNum=c9d1d9&locale=pt_BR" alt="Sequência de contribuições" />
-
-</div>
 
 ---
 
@@ -104,16 +87,38 @@ I build web and mobile apps and real-time systems, from the data model to the la
 - 💼 Open to full-time or contract roles, on-site in Porto Alegre or remote, and to freelance projects
 - 📫 Fastest way to reach me: [gabriel.pmachado00@gmail.com](mailto:gabriel.pmachado00@gmail.com)
 
+<details>
+<summary><b>How I work</b> (click to open)</summary>
+<br>
+
+- **Structure first:** well-separated layers, tested access rules and a project someone else can open and understand.
+- **Flows that guide:** steps, confirmations and shortcuts instead of huge forms. The interface leads, the user doesn't have to memorize.
+- **No mess:** state in one place, data synced across screens and nothing left running when nobody is using it.
+
+</details>
+
+### Tech stack
+
+TypeScript · React · React Native · Expo · Node.js · Firebase · Kotlin · Python · Vite · Tailwind · Capacitor · GitHub Actions
+
 ### Featured projects
 
-| Project | What it is | Link |
-|---|---|---|
-| 💸 **Financy** | Personal finance on web, iPhone and Android, with bank transactions flowing in through Open Finance | [Live](https://financy-vert.vercel.app) |
-| 🪐 **Órbita** | Modular personal organizer with natural-language capture and iOS 26 Liquid Glass | [Code](https://github.com/GabrielPMachado/Orbita) |
-| 🔥 **HypeApp** | Real-time "hype" score for every bar in Cidade Baixa, rated by the people already there | [Code](https://github.com/GabrielPMachado/HypeApp) |
-| 🍺 **Bar do Dindo** | Loyalty app, staff CRM and sign-up page for a bar, all on one serverless Firebase project | [Code](https://github.com/GabrielPMachado/BarDoDindo) |
-| 📐 **O Vértice** | SaaS for small businesses: online presence, marketing and planning, with a 3D template carousel | [Live](https://overtice.vercel.app) |
+| Project | What it is | Stack | Link |
+|---|---|---|---|
+| 💸 **Financy** | Personal finance on web, iPhone and Android, with bank transactions flowing in through Open Finance | React 19 · Firebase · Kotlin | [Live](https://financy-vert.vercel.app) |
+| 🪐 **Órbita** | Modular personal organizer with natural-language capture and iOS 26 Liquid Glass | React Native · Expo · Swift | [Code](https://github.com/GabrielPMachado/Orbita) |
+| 🔥 **HypeApp** | Real-time "hype" score for every bar in Cidade Baixa, rated by the people already there | React Native · Firebase · Google Maps | [Code](https://github.com/GabrielPMachado/HypeApp) |
+| 🍺 **Bar do Dindo** | Loyalty app, staff CRM and sign-up page for a bar, all on one serverless Firebase project | TypeScript · Firestore · Capacitor | [Code](https://github.com/GabrielPMachado/BarDoDindo) |
+| 📐 **O Vértice** | SaaS for small businesses: online presence, marketing and planning, with a 3D template carousel | React 19 · Vite · Vitest | [Live](https://overtice.vercel.app) |
 
 Every project has an animated demo on my [portfolio](https://portfolio-financy1.vercel.app/en/).
+
+### Contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/contributions-light.svg" />
+  <img src="assets/contributions.svg" alt="GitHub contribution grid for the last year" />
+</picture>
 
 </details>
