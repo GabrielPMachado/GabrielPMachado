@@ -1,5 +1,5 @@
 // Gera assets/contribuicoes*.svg (PT) e assets/contributions*.svg (EN), em tema escuro e claro:
-// a grade de contribuições do último ano no estilo do GitHub, com cantos mais redondos,
+// a grade de contribuições do último ano no estilo do GitHub, em tons de roxo, com cantos mais redondos,
 // textos em português e os quadradinhos acendendo coluna por coluna.
 // Uso: GITHUB_TOKEN=... USERNAME=... node scripts/contribuicoes.mjs
 //      MOCK=1 node scripts/contribuicoes.mjs   (dados de exemplo, para testar)
@@ -12,8 +12,8 @@ const TEXTOS = {
     titulo: 'contributions in the last year', em: 'contributions on', atualizado: 'Updated', menos: 'Less', mais: 'More', locale: 'en-US' },
 };
 const TEMAS = {
-  escuro: { bg: '#0d1117', borda: '#30363d', txt: '#e6edf3', dim: '#7d8590', n: ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'] },
-  claro: { bg: '#ffffff', borda: '#d0d7de', txt: '#1f2328', dim: '#59636e', n: ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'] },
+  escuro: { bg: '#0d1117', borda: '#30363d', txt: '#e6edf3', dim: '#7d8590', acc: '#a371f7', n: ['#161b22', '#3b1f6e', '#5b2fb0', '#8957e5', '#bc8cff'] },
+  claro: { bg: '#ffffff', borda: '#d0d7de', txt: '#1f2328', dim: '#59636e', acc: '#8250df', n: ['#ebedf0', '#d8c7ff', '#b392f0', '#8250df', '#5a32a3'] },
 };
 
 async function buscar() {
@@ -66,7 +66,7 @@ function svg({ total, semanas }, t, L) {
 <style>
   text { font: 11px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: ${t.dim}; }
   .t { font-size: 14px; font-weight: 600; fill: ${t.txt}; }
-  .t b, .n { fill: #F2415A; }
+  .n { fill: ${t.acc}; }
   .g rect { opacity: 0; animation: acende .5s ease-out forwards; }
   @keyframes acende { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
   @media (prefers-reduced-motion: reduce) { .g rect { animation: none; opacity: 1; } }
