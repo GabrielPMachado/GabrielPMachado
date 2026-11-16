@@ -69,11 +69,7 @@ Construo apps web e mobile e sistemas em tempo real, do modelo de dados à últi
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contribuicoes.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/contribuicoes-claro.svg" />
-  <img src="assets/contribuicoes.svg" alt="Grade de contribuições no GitHub no último ano" />
-</picture>
+<img src="assets/cidade.svg" alt="Cidade das contribuições: cada prédio é uma semana do último ano" />
 
 </div>
 
@@ -122,11 +118,7 @@ I build web and mobile apps and real-time systems, from the data model to the la
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/contributions-light.svg" />
-  <img src="assets/contributions.svg" alt="GitHub contribution grid for the last year" />
-</picture>
+<img src="assets/city.svg" alt="Contribution city: every building is a week of the last year" />
 
 </div>
 

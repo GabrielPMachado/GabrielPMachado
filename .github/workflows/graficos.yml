@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [".github/workflows/graficos.yml", "scripts/contribuicoes.mjs"]
+    paths: [".github/workflows/graficos.yml", "scripts/**"]
 
 permissions:
   contents: write
@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add assets/contribuicoes*.svg assets/contributions*.svg
+          git add assets/contribuicoes*.svg assets/contributions*.svg assets/cidade.svg assets/city.svg
           if git commit -m "Atualiza os gráficos do perfil"; then
             git push
           fi
