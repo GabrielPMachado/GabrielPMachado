@@ -65,7 +65,7 @@ Construo apps web e mobile e sistemas em tempo real, do modelo de dados à últi
 
 <div align="center">
 
-<img src="assets/cidade.svg" alt="Cidade das contribuições: cada prédio é uma semana do último ano" />
+<img src="assets/cidade-3d.svg" alt="Cidade 3D das contribuições: cada prédio é um dia do último ano" />
 
 </div>
 
@@ -114,7 +114,7 @@ I build web and mobile apps and real-time systems, from the data model to the la
 
 <div align="center">
 
-<img src="assets/city.svg" alt="Contribution city: every building is a week of the last year" />
+<img src="assets/city-3d.svg" alt="3D contribution city: every building is a day of the last year" />
 
 </div>
 
