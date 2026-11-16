@@ -3,14 +3,14 @@
 <img src="assets/header.gif" alt="Terminal apresentando Gabriel Pinto Machado, desenvolvedor full-stack em Porto Alegre" width="760" />
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=A371F7&center=true&vCenter=true&width=620&lines=Sistemas+que+rodam+ao+vivo.;Do+banco+de+dados+ao+%C3%BAltimo+pixel.;Web%2C+mobile+e+tempo+real." alt="Sistemas que rodam ao vivo. Do banco de dados ao último pixel. Web, mobile e tempo real." />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=F2415A&center=true&vCenter=true&width=620&lines=Sistemas+que+rodam+ao+vivo.;Do+banco+de+dados+ao+%C3%BAltimo+pixel.;Web%2C+mobile+e+tempo+real." alt="Sistemas que rodam ao vivo. Do banco de dados ao último pixel. Web, mobile e tempo real." />
 </a>
 
 <p>
   <a href="https://portfolio-financy1.vercel.app"><img src="https://img.shields.io/badge/Portf%C3%B3lio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio" /></a>
   <a href="https://www.linkedin.com/in/gabrielmachado0/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:gabriel.pmachado00@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
-  <img src="https://komarev.com/ghpvc/?username=GabrielPMachado&label=Visitas&color=8957E5&style=for-the-badge" alt="Visitas ao perfil" />
+  <img src="https://komarev.com/ghpvc/?username=GabrielPMachado&label=Visitas&color=F2415A&style=for-the-badge" alt="Visitas ao perfil" />
 </p>
 
 <sub>Português · <a href="#english">English below</a></sub>
