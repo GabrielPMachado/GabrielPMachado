@@ -1,0 +1,43 @@
+name: Gráficos do perfil
+
+# Gera o gráfico de contribuições em 3D e a cobrinha uma vez por dia
+# (e também quando este arquivo muda ou quando rodado à mão em Actions).
+on:
+  schedule:
+    - cron: "0 9 * * *" # 06:00 em Brasília
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/graficos.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Gráfico de contribuições em 3D
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Cobrinha comendo as contribuições
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark&color_snake=#F2415A
+
+      - name: Salvar no repositório
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A profile-3d-contrib dist
+          if git commit -m "Atualiza os gráficos do perfil"; then
+            git push
+          fi
